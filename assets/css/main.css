@@ -1110,7 +1110,6 @@ input, select, textarea {
 		-webkit-transform: scale(1.0);
 		-ms-transform: scale(1.0);
 		transform: scale(1.0);
-		-webkit-backface-visibility: hidden;
 		position: fixed;
 		top: 0;
 		left: 0;
@@ -1667,3 +1666,31 @@ input, select, textarea {
 			font-size: 35px;
 			-webkit-text-stroke: 0.6px rgb(70, 70, 70);
 		}
+
+		#wrapper .img{
+			opacity: 1;
+			text-align: left;
+		}
+
+		#footer p{
+			color: rgb(255, 255, 255);
+			opacity: 0.5; 
+		}
+
+		/* Default styles */
+#header nav ul {
+    display: flex;
+    margin-bottom: 0;
+    list-style: none;
+    padding-left: 0;
+    border: solid 1px #ffffff;
+    border-radius: 4px;
+    flex-direction: row;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 650px) {  
+    #header nav ul {
+        flex-direction: column;
+    }
+}
